@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prayer Times</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Prayer Times</h1>
+        <p>Horaires de priere</p>
+    </div>
+<br>
+
+    <div class="form">
+        <form action="" id="prayer-form">
+            <div class="inside-form">
+                <div>
+                    <label for="city-input">Ville</label><br>
+                    <input id="city-input" type="text" placeholder="Madrid" required>
+                </div>
+                <div>
+                    <label for="country-input">Pays</label><br>
+                    <input id="country-input" type="text" placeholder="Spain" required>
+                </div>
+                <div><br>
+                    <input type="submit" value="Rechercher">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <div class="main">
+        
+        <div class="city-date">
+            <h2 id="location-display">City, Country</h2>
+            <p id="date-display">00 mmm 0000</p>
+        </div>
+
+
+        <div class="rtn">
+            <p>Prochaine priere</p>
+            <h3 id="next-prayer-name">Prayer</h3>
+            <h2 id="next-prayer-time">00:00:00</h2>
+        </div>
+
+
+        <div class="day">
+            <div class="prayer">
+                <h3>Fajr</h3>
+                <p id="fajr-time">0</p>
+            </div>
+            <div class="prayer">
+                <h3>Sunrise</h3>
+                <p id="sunrise-time">0</p>
+            </div>
+            <div class="prayer">
+                <h3>Dhuhr</h3>
+                <p id="dhuhr-time">0</p>
+            </div>
+            <div class="prayer">
+                <h3>Asr</h3>
+                <p id="asr-time">0</p>
+            </div>
+            <div class="prayer">
+                <h3>Maghrib</h3>
+                <p id="maghrib-time">0</p>
+            </div>
+            <div class="prayer">
+                <h3>Isha</h3>
+                <p id="isha-time">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
